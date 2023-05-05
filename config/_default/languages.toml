@@ -1,7 +1,7 @@
 # Uncomment this file to enable multilanguage site support
 
-#[en]
-#languageName = "English"
-#languagedirection = "ltr"
-#title = "Example Site"
-#weight = 1
+[zh-cn]
+languageName = "简体中文"
+languagedirection = "ltr"
+title = "毕少侠"
+weight = 1

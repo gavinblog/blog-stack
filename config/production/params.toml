@@ -18,7 +18,8 @@ subtitle = "毕少侠也在江湖."
 [sidebar.avatar]
 enabled = true
 local = true
-src = "/imgs/avatar.png"
+src = "imgs/avatar.png"
+
 
 [article]
 math = false
@@ -72,35 +73,22 @@ enabled = true
 [imageProcessing.content]
 enabled = true
 
-## Comments
+## Comments 评论系统
 [comments]
 enabled = true
-provider = "disqus"
+provider = "giscus"
+# 评论地址 https://giscus.app/zh-CN
+[comments.giscus]
+repo = "gavinblog/.github"
+repoID = "R_kgDOJPjDtQ"
+category = "Announcements"
+categoryID = "DIC_kwDOJPjDtc4CVYS9"
+mapping = "pathname"
+lightTheme = ""
+darkTheme = ""
+reactionsEnabled = 1
+emitMetadata = 0
 
-[comments.disqusjs]
-shortname = ""
-apiUrl = ""
-apiKey = ""
-admin = ""
-adminLabel = ""
-
-[comments.utterances]
-repo = ""
-issueTerm = "pathname"
-label = ""
-
-[comments.remark42]
-host = ""
-site = ""
-locale = ""
-
-[comments.vssue]
-platform = ""
-owner = ""
-repo = ""
-clientId = ""
-clientSecret = ""
-autoCreateIssue = false
 
 [comments.waline]
 serverURL = ""
@@ -120,29 +108,5 @@ region = ""
 path = ""
 lang = ""
 
-[comments.cactus]
-defaultHomeserverUrl = "https://matrix.cactus.chat:8448"
-serverName = "cactus.chat"
-siteName = ""
 
-[comments.giscus]
-repo = ""
-repoID = ""
-category = ""
-categoryID = ""
-mapping = ""
-lightTheme = ""
-darkTheme = ""
-reactionsEnabled = 1
-emitMetadata = 0
 
-[comments.gitalk]
-owner = ""
-admin = ""
-repo = ""
-clientID = ""
-clientSecret = ""
-
-[comments.cusdis]
-host = ""
-id = ""
