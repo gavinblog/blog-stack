@@ -1,0 +1,41 @@
+# Configure main menu and social menu
+#[[main]]
+#identifier = "home"
+#name = "Home"
+#url = "/"
+#[main.params]
+#icon = "home"
+#newtab = true
+
+[[main]]
+identifier = "nav"
+name = "导航"
+url = "/nav"
+[main.params]
+icon = "link"
+newtab = true
+
+
+[[social]]
+identifier = "github"
+name = "GitHub"
+url = "https://github.com/geekswg"
+
+[social.params]
+icon = "brand-github"
+
+[[social]]
+identifier = "github-hugo-stack"
+name = "hugo-theme-stack"
+url = "https://github.com/CaiJimmy/hugo-theme-stack"
+
+[social.params]
+icon = "brand-github"
+
+[[social]]
+identifier = "twitter"
+name = "Twitter"
+url = "https://twitter.com/geekswg"
+
+[social.params]
+icon = "brand-twitter"
