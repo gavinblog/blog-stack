@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>introduction on 毕少侠</title><link>https://gavinblog.github.io/blog-stack/categories/introduction/</link><description>Recent content in introduction on 毕少侠</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 04 May 2022 12:13:00 +0000</lastBuildDate><atom:link href="https://gavinblog.github.io/blog-stack/categories/introduction/index.xml" rel="self" type="application/rss+xml"/><item><title>Docker 入门</title><link>https://gavinblog.github.io/blog-stack/p/docker-slug/</link><pubDate>Wed, 04 May 2022 12:13:00 +0000</pubDate><guid>https://gavinblog.github.io/blog-stack/p/docker-slug/</guid><description>&lt;img src="https://gavinblog.github.io/blog-stack/p/docker-slug/cover.jpg" alt="Featured image of post Docker 入门" />&lt;p>Docker 是一种开源的容器化平台，它允许开发者将应用程序和依赖项打包成一个可移植的容器，并在任何地方运行。Docker 的出现极大地简化了应用程序的开发、测试和部署过程，也提高了应用程序的可靠性和可伸缩性。&lt;/p>
+&lt;h2 id="docker-的优势">Docker 的优势&lt;/h2>
+&lt;h3 id="1-可移植性">1. 可移植性&lt;/h3>
+&lt;p>Docker 容器可以在任何支持 Docker 引擎的操作系统上运行，这意味着开发人员可以将应用程序和依赖项打包成一个容器，然后在任何地方部署和运行。这种可移植性使得应用程序可以在不同的环境中运行，从而提高了应用程序的可靠性和可伸缩性。&lt;/p>
+&lt;h3 id="2-快速部署">2. 快速部署&lt;/h3>
+&lt;p>使用 Docker 进行应用程序的部署比传统的部署方式更加快速和简单。开发人员可以将应用程序和依赖项打包成一个容器，然后在几分钟内部署到生产环境中。这种快速部署使得开发人员可以更快地交付应用程序，并减少了部署过程中出现的问题和故障。&lt;/p>
+&lt;h3 id="3-易于管理">3. 易于管理&lt;/h3>
+&lt;p>Docker 容器可以轻松地管理和扩展。开发人员可以使用 Docker Compose 来定义和管理多个容器，并使用 Docker Swarm 来扩展和管理容器集群。这种易于管理的特性使得应用程序可以更加可靠和稳定地运行。&lt;/p>
+&lt;h3 id="4-安全性高">4. 安全性高&lt;/h3>
+&lt;p>Docker 容器提供了一种安全的方式来运行应用程序。每个容器都有自己独立的文件系统和网络接口，这意味着应用程序和依赖项不会与其他容器或主机共享。这种隔离性使得应用程序更加安全，并且可以避免一些常见的安全问题，如缓冲区溢出和跨站脚本攻击等。&lt;/p>
+&lt;h2 id="docker-的基本概念">Docker 的基本概念&lt;/h2>
+&lt;h3 id="1-docker-engine">1. Docker Engine&lt;/h3>
+&lt;p>Docker Engine 是 Docker 的核心组件，它负责管理容器的创建、启动、停止和删除等操作。Docker Engine 可以运行在各种操作系统上，包括 Windows、MacOS、Linux 等。&lt;/p>
+&lt;h3 id="2-docker-image">2. Docker Image&lt;/h3>
+&lt;p>Docker Image 是 Docker 中的基本单位，它包含了应用程序和依赖项的所有文件和配置信息。开发人员可以使用 Dockerfile 来构建自己的 Docker Image,然后将其发布到 Docker Hub 上供其他开发人员使用。&lt;/p>
+&lt;h3 id="3-docker-container">3. Docker Container&lt;/h3>
+&lt;p>Docker Container 是 Docker Image 的实例，它包含了应用程序和依赖项的所有文件和配置信息，并且可以直接运行在 Docker Engine 上。开发人员可以使用 Docker run 命令来启动一个新的 Docker Container。&lt;/p>
+&lt;h2 id="如何使用-docker">如何使用 Docker&lt;/h2>
+&lt;h3 id="1-安装-docker-engine">1. 安装 Docker Engine&lt;/h3>
+&lt;p>首先需要在本地计算机上安装 Docker Engine。具体安装方法可以参考 Docker 官方文档。&lt;/p>
+&lt;h3 id="2-获取-docker-image">2. 获取 Docker Image&lt;/h3>
+&lt;p>可以从 Docker Hub 上获取其他人发布的 Docker Image,也可以自己构建自己的 Docker Image。获取 Docker Image 的方法有很多种，最常用的方法是使用 docker pull 命令。&lt;/p>
+&lt;h3 id="3-运行-docker-container">3. 运行 Docker Container&lt;/h3>
+&lt;p>可以使用 docker run 命令来启动一个新的 Docker Container。该命令需要指定要运行的 Docker Image 以及容器的一些参数，例如端口映射、数据卷等。启动成功后，可以通过 docker ps 命令来查看当前正在运行的 Docker Container。&lt;/p>
+&lt;p>Docker 是一种流行的容器化平台，它可以帮助开发人员和运维人员轻松地构建、部署和管理应用程序。下面是在 Linux 系统上安装 Docker 的步骤：&lt;/p>
+&lt;h2 id="1-更新系统软件包列表">1. 更新系统软件包列表&lt;/h2>
+&lt;p>在安装 Docker 之前，需要先更新系统软件包列表。可以使用以下命令来更新：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sql" data-lang="sql">&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">sudo&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">apt&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="k">get&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">update&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="2-安装-docker-engine">2. 安装 Docker Engine&lt;/h2>
+&lt;p>Docker Engine 是 Docker 的核心组件，可以运行 Docker 容器。可以使用以下命令来安装 Docker Engine:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-csharp" data-lang="csharp">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">sudo&lt;/span> &lt;span class="n">apt&lt;/span>&lt;span class="p">-&lt;/span>&lt;span class="k">get&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">docker&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">io&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>该命令会自动下载并安装 Docker Engine。安装完成后，可以通过以下命令来检查 Docker Engine 是否已经成功安装：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-docker" data-lang="docker">&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如果能够输出 &amp;ldquo;Hello from Docker!&amp;quot;,则说明 Docker Engine 已经成功安装。&lt;/p>
+&lt;h2 id="3-验证-docker-是否成功安装">3. 验证 Docker 是否成功安装&lt;/h2>
+&lt;p>安装完成后，可以使用以下命令来验证 Docker 是否已经成功安装：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-css" data-lang="css">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">sudo&lt;/span> &lt;span class="nt">docker&lt;/span> &lt;span class="nt">run&lt;/span> &lt;span class="nt">hello-world&lt;/span> &lt;span class="nt">--help&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如果能够输出 Docker 的帮助信息，则说明 Docker 已经成功安装并且可以正常工作了。&lt;/p>
+&lt;h2 id="4-学习-docker-基础知识">4. 学习 Docker 基础知识&lt;/h2>
+&lt;p>安装完成后，可以开始学习 Docker 的基础知识。可以从 Docker 官方文档(&lt;a class="link" href="%22https://docs.docker.com/%EF%BC%89%E6%8B%A9%E5%90%8E%EF%BC%8C%E5%AD%A6%E4%B9%A0%22" >https://docs.docker.com/)入手，学习&lt;/a> Docker 的基本概念、命令、架构等知识。&lt;/p></description></item></channel></rss>
